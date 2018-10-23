@@ -1,0 +1,66 @@
+/* Common Styles */
+/* Setting site font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button styles */
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+}
+
+.btn-blue {
+    background-color: #008CBA;
+}
+
+.btn-red {
+    background-color: #f44336;
+}
+
+.btn-black {
+    background-color: #555555;
+}
+
+.btn-lg {
+    font-size: 24px;
+}
+
+/* Used for page title */
+.text-center {
+    text-align: center;
+}
+
+/* Student Listing Page Styles */
+/* Table Styling */
+.student-list {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.student-list th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+}
+
+.student-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.action-td, .action-th {
+    text-align: center !important;
+}
