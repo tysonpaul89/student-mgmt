@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var data = null;
     var method = 'GET'
 
-    // Sending AJAX request
-    callAjax(url, data, 'GET', getStudentFunction);
+    // Gets all student data by using AJAX
+    callAjax(url, data, 'GET', processGetAllStudentResponse);
 });
 
 /**
@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
  * @param {string} response Ajax Response data
  * @returns none
  */
-var getStudentFunction = function (error, response) {
+var processGetAllStudentResponse = function (error, response) {
     var errorMessage = 'Sorry! An error occurred during the process.'+
         ' Please try again later';
 
-    // alerts message to user
+    // alerts error message to user
     if (error) {
         alert(errorMessage);
     }
@@ -61,6 +61,7 @@ var getStudentFunction = function (error, response) {
                 = studentListHtml;
         }
     } catch (error) { // alert message to user
+        console.error(err)
         alert(errorMessage);
     }
 }

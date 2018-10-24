@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +9,24 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
 </head>
 <body>
-    <h2 class="text-center">Student Listing</h2>
+    <div class="container">
+        <h2 class="text-center">Student Listing</h2>
 
-    <div class="text-center">
-        <a class="btn btn-lg btn-black" href="create.html">Add New Student</a>
+        <div class="text-center">
+            <a class="btn btn-lg btn-black" href="create.html">Add New Student</a>
+        </div>
+        <table class="student-list">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th class="action-th">Action</th>
+                </tr>
+            </thead>
+            <tbody id="student-list-tbody"></tbody>
+        </table>
     </div>
-    <table class="student-list">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Email</th>
-                <th class="action-th">Action</th>
-            </tr>
-        </thead>
-        <tbody id="student-list-tbody"></tbody>
-    </table>
-
     <script src="assets/js/common.js"></script>
     <script src="assets/js/student-listing.js"></script>
 </body>

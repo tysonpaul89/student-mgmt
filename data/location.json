@@ -1,0 +1,71 @@
+{
+    "country":[
+        { "key": "IND", "value": "India" },
+        { "key": "CAD", "value": "Cananda" },
+        { "key": "USA", "value": "United States" }
+    ],
+    "state": {
+        "IND": [
+            { "key": "KL", "value": "Kerala" },
+            { "key": "TN", "value": "Tamil Nadu" },
+            { "key": "KA", "value": "Karnataka" }
+        ],
+        "CAD": [
+            { "key": "QB", "value": "Quebec" },
+            { "key": "ON", "value": "Ontario" },
+            { "key": "MA", "value": "Manitoba" }
+        ],
+        "USA": [
+            { "key": "TX", "value": "Texas" },
+            { "key": "CL", "value": "California" },
+            { "key": "NY", "value": "New York" }
+        ]
+    },
+    "district": {
+        "KL": [
+            { "key": "COK", "value": "Cochin" },
+            { "key": "TVM", "value": "Trivandrum" },
+            { "key": "CAL", "value": "Calicut" }
+        ],
+        "TN": [
+            { "key": "CBE", "value": "Coimbatore" },
+            { "key": "MAS", "value": "Chennai" },
+            { "key": "SEL", "value": "Salem" }
+        ],
+        "KA": [
+            { "key": "SBC", "value": "Bangalore" },
+            { "key": "MAQ", "value": "Mangalore" },
+            { "key": "UDP", "value": "Udupi" }
+        ],
+        "QB": [
+            { "key": "MON", "value": "Montreal" },
+            { "key": "LAV", "value": "Laval" },
+            { "key": "LEV", "value": "Levis" }
+        ],
+        "ON": [
+            { "key": "TOR", "value": "Toronto" },
+            { "key": "OTA", "value": "Ottawa" },
+            { "key": "HAM", "value": "Hamilton" }
+        ],
+        "MA": [
+            { "key": "WIN", "value": "Winnipeg" },
+            { "key": "BRN", "value": "Brandon" },
+            { "key": "SEL", "value": "Selkirk" }
+        ],
+        "TX": [
+            { "key": "HOU", "value": "Houston" },
+            { "key": "SAT", "value": "San Antonio" },
+            { "key": "DAL", "value": "Dallas" }
+        ],
+        "CL": [
+            { "key": "LAN", "value": "Los Angeles" },
+            { "key": "SAD", "value": "San Diego" },
+            { "key": "SAN", "value": "San Jose" }
+        ],
+        "NY": [
+            { "key": "BFF", "value": "Buffalo" },
+            { "key": "YON", "value": "Yonkers" },
+            { "key": "ALB", "value": "Albany" }
+        ]
+    }
+}

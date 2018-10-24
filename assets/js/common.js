@@ -30,7 +30,7 @@ function callAjax(url, data, method, callback) {
     var payload = formatPayload(data)
 
     // Append data in url if GET request
-    if (method === 'GET') {
+    if (method === 'GET' && data !== null) {
         url += '&' + payload
     }
 

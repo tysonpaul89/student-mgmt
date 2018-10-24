@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Student Registration Form</h2>
+
+        <form action="." method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Student name..">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input class="form-control" type="text" id="age" name="age" placeholder="Student age..">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" id="email" name="email" placeholder="Student Email..">
+            </div>
+
+            <div class="form-group">
+                <label for="gender_0">Gender</label>
+                <div class="form-check-inline">
+                    <input type="radio" name="gender" value="M" class="form-check-input" id="gender_0" checked="">
+                    <label class="form-check-label" for="gender_0">Male</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" name="gender" value="F" class="form-check-input" id="gender_1">
+                    <label class="form-check-label" for="gender_1">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" name="country" onchange="onCountryChange(this)">
+                    <option value="">Select Country</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State</label>
+                <select class="form-control" id="state" name="state" onchange="onStateChange(this)">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="district">District</label>
+                <select class="form-control" id="district" name="district">
+                    <option value="">Select District</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea
+                    name="address"
+                    id="address"
+                    class="form-control"
+                    cols="30" rows="10"
+                    style="font-family: Arial, Helvetica, sans-serif;"
+                    placeholder="Student Address ..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Status</label>
+                <input type="checkbox" name="active" id="is-active" checked="">
+            </div>
+
+            <input type="button" class="form-control btn btn-green" value="Submit">
+            <input type="button" class="form-control btn btn-red" value="Reset">
+            <a href="index.html" class="form-control btn btn-blue">Back</a>
+        </form>
+    </div>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/student-create.js"></script>
+</body>
+
+</html>
